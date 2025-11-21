@@ -11,20 +11,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Репозиторий
         uses: actions/checkout@v4
 
-      - name: Determine release name
+      - name: Версия
         run: echo "RELEASE_NAME=${GITHUB_REF_NAME}" >> $GITHUB_ENV
 
-      - name: Prepare site files
+      - name: файлы
         run: |
           mkdir -p _site
           cp -R index.html ru en _site/
           echo "Содержимое _site:"
           ls -R _site
 
-      - name: Deploy to GitHub Pages
+      - name: Развертывание
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
