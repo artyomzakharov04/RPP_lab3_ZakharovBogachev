@@ -1,8 +1,19 @@
+name: test345
+on:
+  push:
+    branches: ['main']
+
 jobs:
   test345:
     name: Убунту
     runs-on: ubuntu-latest
     steps:
-      name: Задача 1
-      run: |
-      git clone 
+      - name: Задача 1
+        run: |
+          git clone https://github.com/artyomzakharov04/RPP_lab3_ZakharovBogachev.git
+      - name: Задача 2
+        run: |
+          echo "Лабораторная работа №4" -> file.txt
+      - name: Задача 3
+        run: |
+          ls _site/
