@@ -16,4 +16,4 @@ jobs:
           echo "Лабораторная работа №4" -> file.txt
       - name: Задача 3
         run: |
-          ls _site/
+          ls 
