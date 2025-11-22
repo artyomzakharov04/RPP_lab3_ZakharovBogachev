@@ -14,6 +14,7 @@ jobs:
       - name: Задача 2
         run: |
           echo "Лабораторная работа №4" -> file.txt
+          cat file.txt
       - name: Задача 3
         run: |
           ls 
