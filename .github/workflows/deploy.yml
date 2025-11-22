@@ -13,9 +13,7 @@ jobs:
           git clone https://github.com/artyomzakharov04/RPP_lab3_ZakharovBogachev.git
       - name: Задача 2
         run: |
-          echo "Лабораторная работа №4" -> file.txt
-          cat file.txt
-          echo "Лабораторная работа №5" -> file.txt
+          echo "Лабораторная работа №4" >> file.txt
           cat file.txt
       - name: Задача 3
         run: |
